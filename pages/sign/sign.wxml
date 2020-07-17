@@ -1,0 +1,7 @@
+<!--pages/sign/sign.wxml-->
+<view class="container_base">
+    <view class="title">活动名: {{title}}</view>
+    <view class="start">开始时间：{{start_time}} </view>
+    <van-button class="sign" round type="info" disabled="{{!status}}" bind:click="sign" bind:getuserinfo>{{status?"簽到":"已結束"}}</van-button>
+</view>
+<van-toast id="van-toast" />

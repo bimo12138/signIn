@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<van-cell-group title="最新任务">
+    <block wx:for="{{Tasks}}" wx:key="id">
+        <van-cell is-link title="{{item.fields.title}}" link-type="navigateTo" url="/pages/sign/sign?pk={{item.pk}}">{{item.fields.stop?"已截至":"進行中"}}</van-cell>
+    </block>
+</van-cell-group>

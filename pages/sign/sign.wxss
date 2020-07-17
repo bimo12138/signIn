@@ -1,0 +1,18 @@
+/* pages/sign/sign.wxss */
+.container_base {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(61, 126, 31, 0.933);
+    text-align: center;
+}
+.container_base .sign {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: yellow;
+    line-height: 50px;
+    margin: 0 auto;
+}

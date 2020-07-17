@@ -1,0 +1,28 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/admin/admin",
+    "pages/sign/sign",
+    "pages/login/login",
+    "pages/permission/permission",
+    "pages/sign_form/sign_form",
+    "pages/signed/signed"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "text": "主页",
+      "pagePath": "pages/index/index"
+    }, {
+        "text": "管理",
+        "pagePath": "pages/login/login"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

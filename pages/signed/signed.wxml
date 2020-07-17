@@ -1,0 +1,6 @@
+<!--pages/signed/signed.wxml-->
+<van-cell-group title="已签到">
+    <block wx:for="{{signed}}">
+        <van-cell title="{{item.fields.username}}">{{item.fields.sign_time.slice(0, 19)}}</van-cell>
+    </block>
+</van-cell-group>

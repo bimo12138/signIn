@@ -1,0 +1,12 @@
+<van-button type="primary" bind:click="addSign">添加签到任务</van-button>
+<van-popup show="{{ show }}" bind:close="remove">
+    <van-field value="{{title}}" placeholder="输入签到事件标题" bind:change="titke_change"></van-field>
+    <van-button type="primary" bind:click="addSignFinish">提交</van-button>
+</van-popup>
+
+<van-cell-group title="我的任务">
+    <block wx:for="{{myTask}}">
+        <van-cell is-link title="{{item.fields.title}}" link-type="navigateTo" url="/pages/signed/signed?pk={{item.pk}}">{{item.fields.upload_time.slice(0, 19)}}</van-cell>
+    </block>
+</van-cell-group>
+<van-toast id="van-toast" />

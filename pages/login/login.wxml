@@ -1,0 +1,7 @@
+<view class="container_base">
+    <view>Login Admin</view>
+    <van-field label="用户名" placeholder="请输入用户名" value="{{username}}" bind:change="field_input" id="username"></van-field>
+    <van-field label="密码" placeholder="请输入密码" value="{{password}}" id="password" bind:change="field_input" password></van-field>
+    <van-button type="primary" block bind:click="login">登陆</van-button>
+</view>
+<van-toast id="van-toast" />
